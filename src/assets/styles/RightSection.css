@@ -1,0 +1,78 @@
+@charset "UTF-8";
+
+.asideMain{
+    width: 50%;
+    max-width: 400px;
+    padding: 20px 50px 0 0;
+    font-size: 0.9em;
+    background-color: #fff;
+}
+
+.asideMain img{
+    width: 60px;
+    height: 60px;   
+    background: linear-gradient(white, white) padding-box,
+    linear-gradient(45deg, #FFC800, #D300C5) border-box;
+    border-radius: 50%;
+    border: 3px solid transparent;
+
+    cursor: pointer;
+}
+
+.asideMain > div{
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+}
+
+.asideMain > div > div{
+    display: flex;
+    gap: 15px;
+}
+
+.asideMain > div > div span p:first-of-type{
+    font-weight: bolder;
+}
+
+.asideMain > div aside{
+    display: flex;
+    align-items: center;
+    color: #00aeff;
+    cursor: pointer;
+}
+
+.asideMain > div aside:hover, .profilesTitle span:last-of-type:hover{
+    color: rgba(207, 207, 207, 0.479);
+    transition: color .2s;
+}
+
+.profilesTitle{
+    display: flex;
+    justify-content: space-between;
+}
+
+.profilesTitle span:first-of-type{
+    color: #00000080;
+}
+
+.profilesTitle span:last-of-type{
+    color: #000;
+    cursor: pointer;
+}
+
+.asideMain footer{
+    font-size: 0.8em;
+    color: #646464;
+    text-align: justify;
+}
+
+.asideMain footer span{
+    margin-top: 15px;
+    float: left;
+}
+
+@media screen and (max-width: 900px){
+    .asideMain{
+        display: none !important;
+    }
+}

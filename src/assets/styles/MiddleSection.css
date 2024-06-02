@@ -1,0 +1,147 @@
+@charset "UTF-8";
+
+main{
+    max-width: 500px;
+}
+
+main > header{
+    display: flex;
+    flex-wrap: nowrap;
+    gap: 10px;
+    position: relative;
+    max-width: 600px;
+    margin: 25px;
+    overflow-x: hidden;
+}
+
+main > header .profile{
+    text-align: center;
+    color: #000;
+    font-size: 0.8em;
+}
+
+main .profile > img{
+    width: 65px;
+    height: 65px;
+
+    background: linear-gradient(white, white) padding-box,
+    linear-gradient(45deg, #FFC800, #D300C5) border-box;
+    border-radius: 50%;
+    border: 3px solid transparent;
+
+    cursor: pointer;
+}
+
+.Postagem{
+    margin: 10px;
+    border-bottom: 1px solid #7979795e;
+    margin: 10px;
+}
+
+.Postagem > .cabecalho{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin: 10px;
+}
+
+.Postagem > .cabecalho > img{
+    width: 50px;
+    height: 50px;   
+    background: linear-gradient(white, white) padding-box,
+    linear-gradient(45deg, #FFC800, #D300C5) border-box;
+    border-radius: 50%;
+    border: 3px solid transparent;
+
+    cursor: pointer;
+}
+
+.Postagem > .cabecalho > p{
+    flex: 1;
+}
+
+.Postagem > .cabecalho > p > .date{
+    color: #797979;
+}
+
+.Postagem > .cabecalho > span:last-of-type{
+    font-size: 2em;
+    float: right;
+    cursor: pointer;
+}
+
+.Postagem > img{
+    width: 100%;
+    border-radius: 15px;
+}
+
+.Postagem .icones{
+    display: flex;
+    justify-content: space-between;
+    font-size: 1.6em;
+    margin: 10px 3px;
+}
+
+.Postagem .icones svg{
+    cursor: pointer;
+}
+
+.Postagem .icones div{
+    display: flex;
+    gap: 15px;
+}
+
+.Postagem > p{
+    font-size: 0.95em;
+    margin: 5px 0;
+}
+
+.Postagem > form{
+    display: flex;
+}
+
+.Postagem > form > input[type=text]{
+    border: 0;
+    width: 90%;
+    padding: 4px;
+}
+
+.Postagem > form > input[type=submit]{
+    width: 10%;
+    border: 0;
+    background-color: transparent;
+    color: #00aeff;
+    cursor: pointer;
+}
+
+.Postagem > form > input[type=submit]:hover{
+    color: rgba(207, 207, 207, 0.479);
+    transition: color .2s;
+}
+
+.coracao{
+    color: #fff;
+    filter: 
+    drop-shadow( 1px  0px 0px black) 
+    drop-shadow(-1px  0px 0px black)
+    drop-shadow( 0px  1px 0px black) 
+    drop-shadow( 0px -1px 0px black);
+}
+
+.vermelho{
+    transition: color .1s;
+    color: #f00;
+    animation: coracao ease-in-out 1s both;
+}
+
+@keyframes coracao {
+    0%{
+        transform: scale(1);
+    } 
+    50%{
+        transform: scale(1.1);
+    }
+    100%{
+        transform: scale(1);
+    }
+}

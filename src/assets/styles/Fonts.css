@@ -1,0 +1,38 @@
+@font-face {
+    font-family: 'Instagram Sans Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: url('../fonts/instagram/InstagramSans.woff') format('woff');
+}
+    
+  
+@font-face {
+    font-family: 'Instagram Sans Light';
+    font-style: normal;
+    font-weight: normal;
+    src: url('../fonts/instagram/InstagramSansLight.woff') format('woff');
+}
+
+
+@font-face {
+    font-family: 'Instagram Sans Medium';
+    font-style: normal;
+    font-weight: normal;
+    src: url('../fonts/instagram/InstagramSansMedium.woff') format('woff');
+}
+
+
+@font-face {
+    font-family: 'Instagram Sans Bold';
+    font-style: normal;
+    font-weight: normal;
+    src: url('../fonts/instagram/InstagramSansBold.woff') format('woff');
+}
+
+
+@font-face {
+    font-family: 'Instagram Sans Headline Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: url('../fonts/instagram/InstagramSansHeadline.woff') format('woff');
+}
